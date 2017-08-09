@@ -138,7 +138,7 @@ Color Customizations
 /* ==========================================================================
 Line Font
 ========================================================================== */ 
-.line-font {font-size: 48px;}
+.line-font {font-size: 60px;}
 .line-font-small {font-size: 20px;}
 
 /* ==========================================================================
@@ -230,9 +230,9 @@ Main Point
 /* ==========================================================================
 Features
 ========================================================================== */ 
-.features {margin-bottom: 40px; text-align: left;}
-.features i {float: left; margin-right: 20px;}
-.features h3 {font-size: 18px; font-weight: bold; padding-top: 15px; }
+.features {margin-bottom: 50px; text-align: center;}
+.features i { }
+.features h3 {font-size: 20px; font-weight: bold; padding-top: 15px; }
 .features p { clear: both; padding-top: 10px;}
 
 /* ==========================================================================
