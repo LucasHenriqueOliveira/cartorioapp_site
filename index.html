@@ -87,8 +87,6 @@
                         <li><i class="fa fa-check"></i>Cálculos de ITBI e ITCD</li>
                         <li><i class="fa fa-check"></i>Agendamento de entrevistas de testamento</li>
                         <li><i class="fa fa-check"></i>Verificação de firmas registradas</li>
-                        <li><i class="fa fa-check"></i>Agendamento de atendimento de escrituras</li>
-                        <li><i class="fa fa-check"></i>Agendamento de atendimentos de reconhecimento de firmas e autenticações</li>
                     </ul>
                 </div>
                 <!-- End Header Text -->
@@ -100,14 +98,14 @@
                         </div>
                         <div class="form-body">
                             <p>Para saber sobre nossas atualizações, digite seu nome e e-mail!</p>
-                            <form id="banner-form" class="form" method="post" action="form.php">
+                            <form id="myForm" class="form" method="post" action="form.php">
                                 <div class="form-group">
-                                    <input name="banner-name" id="banner-name" type="text" class="form-control" required placeholder="Nome">
+                                    <input name="name" id="banner-name" type="text" class="form-control" required placeholder="Nome">
                                 </div>
                                 <div class="form-group">
-                                    <input name="banner-email" id="banner-email" type="text" class="form-control" required placeholder="E-mail">
+                                    <input name="email" id="banner-email" type="text" class="form-control" required placeholder="E-mail">
                                 </div>
-                                <button type="submit" class="btn btn-default btn-submit">Assine</button>
+                                <button type="button" id="post-btn" class="btn btn-default btn-submit">Assine</button>
                             </form>
                         </div>
                     </div>

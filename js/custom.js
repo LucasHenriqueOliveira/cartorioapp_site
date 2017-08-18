@@ -19,3 +19,14 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
         scrollTop: $(this.hash).offset().top
     }, 1000);
 });
+
+$('#post-btn').click( function() {
+    $.ajax({
+        url: 'form.php',
+        type: 'post',
+        data: $('form#myForm').serialize(),
+        success: function(data) {
+            alert('Obrigado por assinar nossa newsletter.');
+        }
+    });
+});
