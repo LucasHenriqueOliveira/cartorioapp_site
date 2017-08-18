@@ -21,12 +21,19 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
 });
 
 $('#post-btn').click( function() {
+
+    if($.trim($('#name').val()) == '' && $.trim($('#email').val()) == ''){
+        return false;
+    }
+
     $.ajax({
         url: 'form.php',
         type: 'post',
         data: $('form#myForm').serialize(),
         success: function(data) {
             alert('Obrigado por assinar nossa newsletter.');
+            $('#name').val("");
+            $('#email').val("");
         }
     });
 });
